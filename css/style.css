@@ -1,0 +1,392 @@
+body{
+    background-color: white;
+}
+
+.logo{
+    position: absolute;
+	  top: 33px;
+    left: 50px;
+    width: 50px;
+}
+
+/*------------------------------------------------------------------Menu------------------------------------------------------------------*/
+nav{
+  width: 100%;
+  position: relative;
+  top:5px;
+  left: -5%;
+  text-align:center;
+}
+nav a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#310130;
+  margin:0 15px;
+  font-size:18px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+nav a:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background:#310130;
+  top:47%;
+  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before{
+  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
+  }
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
+  }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
+    right: 0;
+  }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.menu{
+    top: 0%;
+    left: 0%;
+    height: 90%;
+    width: 100%;
+    background-image: radial-gradient(circle at 50% -20.71%, #ff00fa 0, #ff00ff 16.67%, #ff00fe 33.33%, #f210f8 50%, #c422ef 66.67%, #982ce6 83.33%, #6932dd 100%); 
+    position: absolute;
+}
+
+.sobmenu{
+    top: 30px;
+    left: 25%;
+    height: 70px;
+    width: 45%;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 50px;
+}
+/*------------------------------------------------------------------Menu------------------------------------------------------------------*/
+
+
+
+
+.slogan{
+    position: absolute;
+    top: 250px;
+    left: 15%;
+    font-size: 50px;
+    font-family: Elephant;
+    text-transform: uppercase;
+}
+
+.carrossel{
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carrossel .fotos{
+  width: 500%;
+  animation: animacao 20s infinite;
+}
+
+.carrossel .fotos img{
+  width: 20%; 
+}
+
+@keyframes animacao{
+  0%{margin-left: 0%;}
+  20%{margin-left: 0%;}
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+  75%{margin-left: -300%;}
+  95%{margin-left: -300%;}
+  100%{margin-left: -400%;}
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------Corpo---------------------------------------------------------------------*/
+.back{
+    position: relative;
+    left: 0;
+    top: 550px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*------------------------------------------------------------------Integrantes------------------------------------------------------------------*/
+.integrantes{
+    top: 830px;
+    left: 0%;
+    height: 430px;
+    width: 100%;
+    background-image: radial-gradient(circle at 50% -20.71%, #ff00fa 0, #ff00ff 16.67%, #ff00fe 33.33%, #f210f8 50%, #c422ef 66.67%, #982ce6 83.33%, #6932dd 100%);
+    position: absolute;
+    border-radius: 5px;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2%;
+  text-transform: uppercase;
+  font-family: 'elephant';
+}
+/*------------------------------------------------------------------Integrantes------------------------------------------------------------------*/
+/*Ana*/
+.fotinhaa{
+  top: 90px;
+  left: 10%;
+  height: 200px;
+  width: 200px;
+  background-image: url(../img/fotinhaa.jpg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.nomea{
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  top: 310px;
+  left: 11.5%;
+  position: absolute;
+  font-weight: bold;
+}
+
+.descricaoa{
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  top: 335px;
+  left: 12%;
+  position: absolute;
+}
+
+.logoinstaa{
+  position: absolute;
+  top: 360px;
+  left: 17%;
+}
+
+/*Gabs*/
+.fotinhag{
+  top: 90px;
+  left: 30%;
+  height: 200px;
+  width: 200px;
+  background-image: url(../img/fotinhag.jpg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.nomeg{
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  top: 310px;
+  left: 33%;
+  position: absolute;
+  font-weight: bold;
+}
+
+.descricaog{
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  top: 335px;
+  left: 32.5%;
+  position: absolute;
+}
+
+.logoinstag{
+  position: absolute;
+  top: 360px;
+  left: 37.5%;
+}
+
+/*Eduardo*/
+.fotinhae{
+  top: 90px;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  background-image: url(../img/fotinhae.jpg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.nomee{
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  top: 310px;
+  left: 53%;
+  position: absolute;
+  font-weight: bold;
+}
+
+.descricaoe{
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  top: 335px;
+  left: 52.7%;
+  position: absolute;
+}
+
+.logoinstae{
+  position: absolute;
+  top: 360px;
+  left: 57.5%;
+}
+
+/*Hagata*/
+.fotinhah{
+  top: 90px;
+  left: 70%;
+  height: 200px;
+  width: 200px;
+  background-image: url(../img/fotinhah.jpg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.nomeh{
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  top: 310px;
+  left: 73%;
+  position: absolute;
+  font-weight: bold;
+}
+
+.descricaoh{
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  top: 335px;
+  left: 72.5%;
+  position: absolute;
+}
+
+.logoinstah{
+  position: absolute;
+  top: 360px;
+  left: 77.5%;
+}
+/*------------------------------------------------------------------Integrantes------------------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------------------------Corpo---------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------Ropadapé------------------------------------------------------------------*/
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.logotipo {
+ width: 100%;
+ text-align: center;
+ font-size: 0.7em;
+}
+.logotipo img {
+ width: 20%;
+ vertical-align: middle;
+}
+.redes {
+ width: 100%;
+ text-align: center;
+}
+.redes img {
+ width: 18%;
+}
+.redes ul li {
+ text-transform: uppercase;
+ list-style-type: none;
+ display: inline;
+}
+@media only screen and (min-width: 450px)
+and (max-width: 769px){
+ footer {
+     clear: both;
+     width: 100%;
+  }
+  .logotipo {
+      width: 50%;
+      float: left;
+      text-align: left;
+  }
+  .redes {
+      width: 50%;
+      float: right;
+  }
+}
+@media only screen and (min-width: 769px) {
+ footer {
+     width: 100%;
+     clear: both;
+     margin-bottom: 3%;
+ }
+ .logotipo {
+     font-size: 1em;
+     width: 45%;
+     float: left;
+     text-align: center;
+  }
+  .logotipo img, .redes img {
+      width: 10%;
+  }
+  .redes {
+      width: 45%;
+      float: right;
+      margin-right: 1%;
+      text-align: center;
+  }
+}
+
+
+
+
+
+/*------------------------------------------------------------------Ropadapé------------------------------------------------------------------*/
