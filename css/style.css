@@ -156,9 +156,9 @@ nav a:hover:before{
 /*------------------------------------------------------------------Integrantes------------------------------------------------------------------*/
 .integrantes{
     top: 830px;
-    left: 0%;
+    left: 2.5%;
     height: 430px;
-    width: 100%;
+    width: 95%;
     background-image: radial-gradient(circle at 50% -20.71%, #ff00fa 0, #ff00ff 16.67%, #ff00fe 33.33%, #f210f8 50%, #c422ef 66.67%, #982ce6 83.33%, #6932dd 100%);
     position: absolute;
     border-radius: 5px;
